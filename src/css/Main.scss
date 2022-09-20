@@ -1,0 +1,33 @@
+.clickBtn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    color: #008050;
+    border: 1px solid #008050;
+    font-size: 15px;
+}
+
+.Main {
+    position: relative;
+
+    .slide {
+        height: 700px;
+        color: #fff;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1170px;
+
+    }
+
+    @for $i from 1 through 3 {
+        .itm0#{$i} {
+            background: url(../../public/assets/img/main_visual0#{$i}.jpg) no-repeat center center/cover;
+        }
+    }
+
+}
